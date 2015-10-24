@@ -41,10 +41,6 @@ class TipsViewController: UIViewController {
         fromVC.navigationController!.pushViewController(toVC!, animated: true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     @IBAction func tapCreateTable(sender: AnyObject) {
         var array = [String]()
         let randNum = arc4random() % 5
