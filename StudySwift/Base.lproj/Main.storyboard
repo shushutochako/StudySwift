@@ -62,17 +62,31 @@
                                     <segue destination="4LT-1C-tHq" kind="show" id="6jC-l7-5o3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39N-28-GXJ">
+                                <rect key="frame" x="50" y="540" width="500" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vhI-2L-gPG"/>
+                                </constraints>
+                                <state key="normal" title="Tips"/>
+                                <connections>
+                                    <action selector="tapTips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiO-yp-ydN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="39N-28-GXJ" secondAttribute="trailing" constant="50" id="7cm-xD-mSF"/>
                             <constraint firstItem="eSi-rw-csB" firstAttribute="top" secondItem="6PG-jv-xMp" secondAttribute="bottom" constant="56" id="8DW-76-2hb"/>
                             <constraint firstItem="6PG-jv-xMp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="BjL-jz-gjZ"/>
                             <constraint firstItem="6PG-jv-xMp" firstAttribute="top" secondItem="eZQ-J6-h2D" secondAttribute="bottom" constant="50" id="Dyp-X2-KpW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="39N-28-GXJ" secondAttribute="bottom" constant="30" id="Hwl-uS-ZKH"/>
                             <constraint firstItem="eZQ-J6-h2D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Jmb-zz-QlW"/>
                             <constraint firstAttribute="trailing" secondItem="eSi-rw-csB" secondAttribute="trailing" constant="50" id="QEF-4w-7cd"/>
                             <constraint firstItem="eZQ-J6-h2D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="UDK-9m-7Ck"/>
                             <constraint firstItem="eSi-rw-csB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="YGt-lV-rmf"/>
                             <constraint firstAttribute="trailing" secondItem="eZQ-J6-h2D" secondAttribute="trailing" constant="50" id="aed-fK-tUk"/>
+                            <constraint firstItem="39N-28-GXJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="fxB-Zc-GGN"/>
                             <constraint firstAttribute="trailing" secondItem="6PG-jv-xMp" secondAttribute="trailing" constant="50" id="gpq-rc-Uy9"/>
                             <constraint firstItem="Omp-wK-kE1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="hbT-m3-1UT"/>
                             <constraint firstItem="Omp-wK-kE1" firstAttribute="top" secondItem="eSi-rw-csB" secondAttribute="bottom" constant="50" id="wNc-vE-fBD"/>
@@ -349,6 +363,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axn-pH-qKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="-387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ygp-Gd-QhG">
+            <objects>
+                <viewController id="IuQ-WL-XEG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7jG-1x-jOR"/>
+                        <viewControllerLayoutGuide type="bottom" id="HqF-pU-VgI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6hV-56-fuY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xf1-tB-eQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>

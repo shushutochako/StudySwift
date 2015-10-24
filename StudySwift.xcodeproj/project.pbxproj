@@ -22,11 +22,12 @@
 		AAF5EB441BDB5898002E4905 /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB431BDB5898002E4905 /* OptionalViewController.swift */; };
 		AAF5EB471BDB5DD1002E4905 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB461BDB5DD1002E4905 /* GenericViewController.swift */; };
 		AAF5EB491BDB68EA002E4905 /* EnumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB481BDB68EA002E4905 /* EnumViewController.swift */; };
-		AAF5EB4C1BDB7059002E4905 /* PostUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB4B1BDB7059002E4905 /* PostUser.swift */; };
 		AAF5EB4F1BDB731E002E4905 /* EnumSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB4E1BDB731E002E4905 /* EnumSample.swift */; };
 		AAF5EB511BDB7467002E4905 /* PropertyObserveSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB501BDB7467002E4905 /* PropertyObserveSample.swift */; };
 		AAF5EB531BDB771B002E4905 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB521BDB771B002E4905 /* OthersViewController.swift */; };
 		AAF5EB551BDB7E37002E4905 /* DefaultArgumentsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB541BDB7E37002E4905 /* DefaultArgumentsSample.swift */; };
+		AAF5EB5B1BDB8180002E4905 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB5A1BDB8180002E4905 /* TipsViewController.swift */; };
+		AAF5EB5D1BDB8197002E4905 /* TipsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,11 +69,12 @@
 		AAF5EB431BDB5898002E4905 /* OptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
 		AAF5EB461BDB5DD1002E4905 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		AAF5EB481BDB68EA002E4905 /* EnumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumViewController.swift; sourceTree = "<group>"; };
-		AAF5EB4B1BDB7059002E4905 /* PostUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostUser.swift; sourceTree = "<group>"; };
 		AAF5EB4E1BDB731E002E4905 /* EnumSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumSample.swift; sourceTree = "<group>"; };
 		AAF5EB501BDB7467002E4905 /* PropertyObserveSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyObserveSample.swift; sourceTree = "<group>"; };
 		AAF5EB521BDB771B002E4905 /* OthersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
 		AAF5EB541BDB7E37002E4905 /* DefaultArgumentsSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultArgumentsSample.swift; sourceTree = "<group>"; };
+		AAF5EB5A1BDB8180002E4905 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TipsViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		AAF5EAF91BDB269B002E4905 /* StudySwift */ = {
 			isa = PBXGroup;
 			children = (
+				AAF5EB561BDB80BB002E4905 /* Tips */,
 				AAF5EB4D1BDB7303002E4905 /* SampleLogic */,
 				AAF5EB451BDB58A2002E4905 /* ViewControllers */,
 				AAF5EB2A1BDB2DE9002E4905 /* MyObject */,
@@ -158,7 +161,6 @@
 		AAF5EB2A1BDB2DE9002E4905 /* MyObject */ = {
 			isa = PBXGroup;
 			children = (
-				AAF5EB4A1BDB7024002E4905 /* Etities */,
 				AAF5EB2B1BDB2E05002E4905 /* Car.swift */,
 				AAF5EB3C1BDB3E12002E4905 /* Sample01+Car.swift */,
 			);
@@ -177,14 +179,6 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		AAF5EB4A1BDB7024002E4905 /* Etities */ = {
-			isa = PBXGroup;
-			children = (
-				AAF5EB4B1BDB7059002E4905 /* PostUser.swift */,
-			);
-			name = Etities;
-			sourceTree = "<group>";
-		};
 		AAF5EB4D1BDB7303002E4905 /* SampleLogic */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +188,39 @@
 				AAF5EB541BDB7E37002E4905 /* DefaultArgumentsSample.swift */,
 			);
 			name = SampleLogic;
+			sourceTree = "<group>";
+		};
+		AAF5EB561BDB80BB002E4905 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				AAF5EB5E1BDB81E4002E4905 /* Extensions */,
+				AAF5EB571BDB8105002E4905 /* Controllers */,
+				AAF5EB581BDB8105002E4905 /* Entities */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		AAF5EB571BDB8105002E4905 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAF5EB5A1BDB8180002E4905 /* TipsViewController.swift */,
+				AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AAF5EB581BDB8105002E4905 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AAF5EB5E1BDB81E4002E4905 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +330,7 @@
 				AAF5EB051BDB269B002E4905 /* LaunchScreen.storyboard in Resources */,
 				AAF5EB021BDB269B002E4905 /* Assets.xcassets in Resources */,
 				AAF5EB001BDB269B002E4905 /* Main.storyboard in Resources */,
+				AAF5EB5D1BDB8197002E4905 /* TipsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +364,9 @@
 				AAF5EAFB1BDB269B002E4905 /* AppDelegate.swift in Sources */,
 				AAF5EB421BDB5801002E4905 /* GenericSample.swift in Sources */,
 				AAF5EB511BDB7467002E4905 /* PropertyObserveSample.swift in Sources */,
-				AAF5EB4C1BDB7059002E4905 /* PostUser.swift in Sources */,
 				AAF5EB441BDB5898002E4905 /* OptionalViewController.swift in Sources */,
 				AAF5EB551BDB7E37002E4905 /* DefaultArgumentsSample.swift in Sources */,
+				AAF5EB5B1BDB8180002E4905 /* TipsViewController.swift in Sources */,
 				AAF5EB2C1BDB2E05002E4905 /* Car.swift in Sources */,
 				AAF5EB291BDB2BD5002E4905 /* Sample01.swift in Sources */,
 				AAF5EB3D1BDB3E12002E4905 /* Sample01+Car.swift in Sources */,

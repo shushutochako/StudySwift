@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZSm-Q1-hwj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Tips View Controller-->
+        <scene sceneID="Nh3-Wj-fne">
+            <objects>
+                <viewController storyboardIdentifier="TipsViewController" id="ZSm-Q1-hwj" customClass="TipsViewController" customModule="StudySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QHn-GJ-xtP"/>
+                        <viewControllerLayoutGuide type="bottom" id="asa-KB-CIr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w4k-ka-6n4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weh-Yn-7E7">
+                                <rect key="frame" x="50" y="70" width="500" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-j9-XHP">
+                                <rect key="frame" x="50" y="101" width="500" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F1d-Ee-jrG"/>
+                                </constraints>
+                                <state key="normal" title="Crete Table"/>
+                                <connections>
+                                    <action selector="tapCreateTable:" destination="ZSm-Q1-hwj" eventType="touchUpInside" id="vkv-Bi-bBO"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3ig-UW-aOD">
+                                <rect key="frame" x="0.0" y="141" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="nuH-Y1-9qp"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="weh-Yn-7E7" firstAttribute="leading" secondItem="w4k-ka-6n4" secondAttribute="leading" constant="50" id="3IZ-bK-OEG"/>
+                            <constraint firstAttribute="trailing" secondItem="3ig-UW-aOD" secondAttribute="trailing" id="4Q6-pk-b0t"/>
+                            <constraint firstItem="Kbv-j9-XHP" firstAttribute="leading" secondItem="w4k-ka-6n4" secondAttribute="leading" constant="50" id="8Q2-BJ-6OF"/>
+                            <constraint firstItem="3ig-UW-aOD" firstAttribute="leading" secondItem="w4k-ka-6n4" secondAttribute="leading" id="S00-q2-CXa"/>
+                            <constraint firstItem="3ig-UW-aOD" firstAttribute="top" secondItem="Kbv-j9-XHP" secondAttribute="bottom" constant="10" id="eWZ-wn-10T"/>
+                            <constraint firstAttribute="trailing" secondItem="Kbv-j9-XHP" secondAttribute="trailing" constant="50" id="iN2-jm-Iyg"/>
+                            <constraint firstAttribute="trailing" secondItem="weh-Yn-7E7" secondAttribute="trailing" constant="50" id="lMY-rx-uDi"/>
+                            <constraint firstItem="weh-Yn-7E7" firstAttribute="top" secondItem="QHn-GJ-xtP" secondAttribute="bottom" constant="50" id="lfF-RJ-5e0"/>
+                            <constraint firstItem="Kbv-j9-XHP" firstAttribute="top" secondItem="weh-Yn-7E7" secondAttribute="bottom" constant="10" id="ww6-JG-04c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="strTable" destination="3ig-UW-aOD" id="C08-Ua-KJS"/>
+                        <outlet property="textLabel" destination="weh-Yn-7E7" id="OFe-JD-aDp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2p-sW-s2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="394"/>
+        </scene>
+    </scenes>
+</document>

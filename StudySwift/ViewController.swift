@@ -13,5 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func tapTips(sender: AnyObject) {
+        TipsViewController.push(self)
+    }
 }
 
