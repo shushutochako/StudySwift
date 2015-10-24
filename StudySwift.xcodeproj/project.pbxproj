@@ -195,7 +195,6 @@
 			children = (
 				AAF5EB5E1BDB81E4002E4905 /* Extensions */,
 				AAF5EB571BDB8105002E4905 /* Controllers */,
-				AAF5EB581BDB8105002E4905 /* Entities */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -207,13 +206,6 @@
 				AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		AAF5EB581BDB8105002E4905 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		AAF5EB5E1BDB81E4002E4905 /* Extensions */ = {
