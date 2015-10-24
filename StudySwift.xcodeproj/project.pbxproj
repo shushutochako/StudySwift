@@ -18,6 +18,10 @@
 		AAF5EB2C1BDB2E05002E4905 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB2B1BDB2E05002E4905 /* Car.swift */; };
 		AAF5EB2E1BDB2F4B002E4905 /* Sample02.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB2D1BDB2F4B002E4905 /* Sample02.swift */; };
 		AAF5EB3D1BDB3E12002E4905 /* Sample01+Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB3C1BDB3E12002E4905 /* Sample01+Car.swift */; };
+		AAF5EB421BDB5801002E4905 /* Tips01.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB411BDB5801002E4905 /* Tips01.swift */; };
+		AAF5EB441BDB5898002E4905 /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB431BDB5898002E4905 /* OptionalViewController.swift */; };
+		AAF5EB471BDB5DD1002E4905 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB461BDB5DD1002E4905 /* GenericViewController.swift */; };
+		AAF5EB491BDB68EA002E4905 /* EnumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB481BDB68EA002E4905 /* EnumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		AAF5EB2B1BDB2E05002E4905 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		AAF5EB2D1BDB2F4B002E4905 /* Sample02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample02.swift; sourceTree = "<group>"; };
 		AAF5EB3C1BDB3E12002E4905 /* Sample01+Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Sample01+Car.swift"; sourceTree = "<group>"; };
+		AAF5EB411BDB5801002E4905 /* Tips01.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tips01.swift; sourceTree = "<group>"; };
+		AAF5EB431BDB5898002E4905 /* OptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
+		AAF5EB461BDB5DD1002E4905 /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		AAF5EB481BDB68EA002E4905 /* EnumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +113,13 @@
 		AAF5EAF91BDB269B002E4905 /* StudySwift */ = {
 			isa = PBXGroup;
 			children = (
+				AAF5EB451BDB58A2002E4905 /* ViewControllers */,
 				AAF5EB2A1BDB2DE9002E4905 /* MyObject */,
 				AAF5EAFA1BDB269B002E4905 /* AppDelegate.swift */,
-				AAF5EAFC1BDB269B002E4905 /* ViewController.swift */,
 				AAF5EAFE1BDB269B002E4905 /* Main.storyboard */,
 				AAF5EB281BDB2BD5002E4905 /* Sample01.swift */,
 				AAF5EB2D1BDB2F4B002E4905 /* Sample02.swift */,
+				AAF5EB411BDB5801002E4905 /* Tips01.swift */,
 				AAF5EB011BDB269B002E4905 /* Assets.xcassets */,
 				AAF5EB031BDB269B002E4905 /* LaunchScreen.storyboard */,
 				AAF5EB061BDB269B002E4905 /* Info.plist */,
@@ -143,6 +152,17 @@
 				AAF5EB3C1BDB3E12002E4905 /* Sample01+Car.swift */,
 			);
 			name = MyObject;
+			sourceTree = "<group>";
+		};
+		AAF5EB451BDB58A2002E4905 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAF5EAFC1BDB269B002E4905 /* ViewController.swift */,
+				AAF5EB431BDB5898002E4905 /* OptionalViewController.swift */,
+				AAF5EB461BDB5DD1002E4905 /* GenericViewController.swift */,
+				AAF5EB481BDB68EA002E4905 /* EnumViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF5EB471BDB5DD1002E4905 /* GenericViewController.swift in Sources */,
+				AAF5EB491BDB68EA002E4905 /* EnumViewController.swift in Sources */,
 				AAF5EB2E1BDB2F4B002E4905 /* Sample02.swift in Sources */,
 				AAF5EAFD1BDB269B002E4905 /* ViewController.swift in Sources */,
 				AAF5EAFB1BDB269B002E4905 /* AppDelegate.swift in Sources */,
+				AAF5EB421BDB5801002E4905 /* Tips01.swift in Sources */,
+				AAF5EB441BDB5898002E4905 /* OptionalViewController.swift in Sources */,
 				AAF5EB2C1BDB2E05002E4905 /* Car.swift in Sources */,
 				AAF5EB291BDB2BD5002E4905 /* Sample01.swift in Sources */,
 				AAF5EB3D1BDB3E12002E4905 /* Sample01+Car.swift in Sources */,
