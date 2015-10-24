@@ -14,6 +14,9 @@ enum LabelColor {
 
 class TipsViewController: UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
+    
     @IBOutlet weak var strTable: UITableView! {
         didSet {
             self.strTable.delegate = self
@@ -47,6 +50,7 @@ class TipsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 色のenumからナビゲーションバーの色を変更
         self.navigationController!.navigationBar.barTintColor = UIColor(type: .Primary)
     }
     
@@ -57,6 +61,17 @@ class TipsViewController: UIViewController {
             array.append("アイテム\(i)")
         }
         self.tableItems = array
+    }
+    
+    @IBAction func tapNextCreate(sender: AnyObject) {
+        // 作成モードで遷移
+        ProfileViewController.present(self, editType: .Create)
+    }
+    
+    @IBAction func tapNextUpdate(sender: AnyObject) {
+        // 更新モードで遷移
+        let model = ProfileModel(name: "増島 亘康", comment: "よろしくおねがします！")
+        ProfileViewController.present(self, editType: .Update(profile: model))
     }
 }
 
@@ -72,4 +87,11 @@ extension TipsViewController: UITableViewDataSource {
 }
 
 extension TipsViewController: UITableViewDelegate {
+}
+
+extension TipsViewController: ProfileViewControllerDelegate {
+    func onSubmit(name: String, comment: String) {
+        self.nameLabel.text = name
+        self.commentLabel.text = comment
+    }
 }

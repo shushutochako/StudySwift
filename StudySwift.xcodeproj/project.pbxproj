@@ -30,6 +30,9 @@
 		AAF5EB5D1BDB8197002E4905 /* TipsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */; };
 		AAF5EB681BDBC745002E4905 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB671BDBC745002E4905 /* UIColor+Hex.swift */; };
 		AAF5EB6A1BDBC7A7002E4905 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB691BDBC7A7002E4905 /* UIColor+Additions.swift */; };
+		AAF5EB6C1BDBCB65002E4905 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB6B1BDBCB65002E4905 /* ProfileViewController.swift */; };
+		AAF5EB6E1BDBCB79002E4905 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF5EB6D1BDBCB79002E4905 /* ProfileViewController.storyboard */; };
+		AAF5EB711BDBCC8F002E4905 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB701BDBCC8F002E4905 /* ProfileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TipsViewController.storyboard; sourceTree = "<group>"; };
 		AAF5EB671BDBC745002E4905 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		AAF5EB691BDBC7A7002E4905 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		AAF5EB6B1BDBCB65002E4905 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AAF5EB6D1BDBCB79002E4905 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		AAF5EB701BDBCC8F002E4905 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +203,7 @@
 		AAF5EB561BDB80BB002E4905 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				AAF5EB6F1BDBCC74002E4905 /* Entities */,
 				AAF5EB5E1BDB81E4002E4905 /* Extensions */,
 				AAF5EB571BDB8105002E4905 /* Controllers */,
 			);
@@ -208,6 +215,8 @@
 			children = (
 				AAF5EB5A1BDB8180002E4905 /* TipsViewController.swift */,
 				AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */,
+				AAF5EB6B1BDBCB65002E4905 /* ProfileViewController.swift */,
+				AAF5EB6D1BDBCB79002E4905 /* ProfileViewController.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +228,14 @@
 				AAF5EB691BDBC7A7002E4905 /* UIColor+Additions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAF5EB6F1BDBCC74002E4905 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AAF5EB701BDBCC8F002E4905 /* ProfileModel.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +345,7 @@
 				AAF5EB051BDB269B002E4905 /* LaunchScreen.storyboard in Resources */,
 				AAF5EB021BDB269B002E4905 /* Assets.xcassets in Resources */,
 				AAF5EB001BDB269B002E4905 /* Main.storyboard in Resources */,
+				AAF5EB6E1BDBCB79002E4905 /* ProfileViewController.storyboard in Resources */,
 				AAF5EB5D1BDB8197002E4905 /* TipsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,8 +375,10 @@
 				AAF5EB531BDB771B002E4905 /* OthersViewController.swift in Sources */,
 				AAF5EB491BDB68EA002E4905 /* EnumViewController.swift in Sources */,
 				AAF5EB4F1BDB731E002E4905 /* EnumSample.swift in Sources */,
+				AAF5EB711BDBCC8F002E4905 /* ProfileModel.swift in Sources */,
 				AAF5EB2E1BDB2F4B002E4905 /* Sample02.swift in Sources */,
 				AAF5EAFD1BDB269B002E4905 /* ViewController.swift in Sources */,
+				AAF5EB6C1BDBCB65002E4905 /* ProfileViewController.swift in Sources */,
 				AAF5EAFB1BDB269B002E4905 /* AppDelegate.swift in Sources */,
 				AAF5EB421BDB5801002E4905 /* GenericSample.swift in Sources */,
 				AAF5EB511BDB7467002E4905 /* PropertyObserveSample.swift in Sources */,
