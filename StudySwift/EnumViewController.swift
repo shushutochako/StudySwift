@@ -8,24 +8,6 @@
 
 import UIKit
 
-enum UpdateType {
-    case Create, Update, Delete
-    func toString() -> String {
-        switch self {
-        case Create:
-            return "Create"
-        case Update:
-            return "Update"
-        case Delete:
-            return "Delete"
-        }
-    }
-}
-
-enum PrintConsoleType: String {
-    case CreateConsole = "CreateConsole", UpdateConsole = "UpdateConsole", DeleteConsole = "DeleteConsole"
-}
-
 class EnumViewController: UIViewController {
     @IBOutlet weak var messageLabel: UILabel!
     
@@ -34,25 +16,25 @@ class EnumViewController: UIViewController {
     }
     
     @IBAction func tapCreate(sender: AnyObject) {
-        self.updateLabel(.Create)
-        self.printConsole(.CreateConsole)
+        let logic = EnumSample()
+        logic.updateLabel(.Create, label: self.messageLabel)
+        logic.printConsole(.CreateConsole)
+        logic.printConsole2("CreateConsole")
+        logic.printConsole3(.Human(name: "増島 亘康"))
     }
     
     @IBAction func tapUpdate(sender: AnyObject) {
-        self.updateLabel(.Update)
-        self.printConsole(.UpdateConsole)
+        let logic = EnumSample()
+        logic.updateLabel(.Update, label: self.messageLabel)
+        logic.printConsole(.UpdateConsole)
+        logic.printConsole2("UpdateConsole")
+        logic.printConsole3(.Car(speed: 60))
     }
     
     @IBAction func tapDelete(sender: AnyObject) {
-        self.updateLabel(.Delete)
-        self.printConsole(.DeleteConsole)
-    }
-    
-    private func updateLabel(type: UpdateType) {
-        self.messageLabel.text = type.toString()
-    }
-    
-    private func printConsole(type: PrintConsoleType) {
-        print(type.rawValue)
-    }
+        let logic = EnumSample()
+        logic.updateLabel(.Delete, label: self.messageLabel)
+        logic.printConsole(.DeleteConsole)
+        logic.printConsole2("DeleteConsole")
+    }    
 }

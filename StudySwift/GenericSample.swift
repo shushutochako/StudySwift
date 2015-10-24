@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Tips01: NSObject {
+class GenericSample: NSObject {
     func printOptional(message: String) {
         print(message)
     }

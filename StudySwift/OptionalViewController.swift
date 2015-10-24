@@ -15,18 +15,18 @@ class OptionalViewController: UIViewController {
     }
     
     @IBAction func tapForceUnwrap(sender: AnyObject) {
-        let tips: Tips01? = nil
+        let tips: GenericSample? = nil
         tips!.printOptional("Force Unwrap")
     }
     
     @IBAction func tapChaining(sender: AnyObject) {
-        let tips: Tips01? = nil
+        let tips: GenericSample? = nil
         tips?.printOptional("Optional Chaining")
     }
     
     @IBAction func tapBinding(sender: AnyObject) {
-        let tips1: Tips01? = nil
-        let tips2: Tips01? = Tips01()
+        let tips1: GenericSample? = nil
+        let tips2: GenericSample? = GenericSample()
         if let tips1 = tips1 {
             tips1.printOptional("Optional Binding01")
         }
