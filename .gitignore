@@ -13,6 +13,7 @@ build/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+*/xcuserdate/*
 *.xccheckout
 *.moved-aside
 DerivedData
@@ -20,6 +21,4 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-# CocoaPods
-Pods/
 
