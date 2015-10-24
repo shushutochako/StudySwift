@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum LabelColor {
+    case Primary, Secondary
+}
+
 class TipsViewController: UIViewController {
     
     @IBOutlet weak var strTable: UITableView! {
@@ -39,6 +43,11 @@ class TipsViewController: UIViewController {
         let storyboard = UIStoryboard(name: "TipsViewController", bundle: nil)
         let toVC = storyboard.instantiateInitialViewController()
         fromVC.navigationController!.pushViewController(toVC!, animated: true)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController!.navigationBar.barTintColor = UIColor(type: .Primary)
     }
     
     @IBAction func tapCreateTable(sender: AnyObject) {

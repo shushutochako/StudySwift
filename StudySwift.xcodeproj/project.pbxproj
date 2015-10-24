@@ -28,6 +28,8 @@
 		AAF5EB551BDB7E37002E4905 /* DefaultArgumentsSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB541BDB7E37002E4905 /* DefaultArgumentsSample.swift */; };
 		AAF5EB5B1BDB8180002E4905 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB5A1BDB8180002E4905 /* TipsViewController.swift */; };
 		AAF5EB5D1BDB8197002E4905 /* TipsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */; };
+		AAF5EB681BDBC745002E4905 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB671BDBC745002E4905 /* UIColor+Hex.swift */; };
+		AAF5EB6A1BDBC7A7002E4905 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EB691BDBC7A7002E4905 /* UIColor+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		AAF5EB541BDB7E37002E4905 /* DefaultArgumentsSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultArgumentsSample.swift; sourceTree = "<group>"; };
 		AAF5EB5A1BDB8180002E4905 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TipsViewController.storyboard; sourceTree = "<group>"; };
+		AAF5EB671BDBC745002E4905 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		AAF5EB691BDBC7A7002E4905 /* UIColor+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,8 @@
 		AAF5EB5E1BDB81E4002E4905 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AAF5EB671BDBC745002E4905 /* UIColor+Hex.swift */,
+				AAF5EB691BDBC7A7002E4905 /* UIColor+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -356,12 +362,14 @@
 				AAF5EAFB1BDB269B002E4905 /* AppDelegate.swift in Sources */,
 				AAF5EB421BDB5801002E4905 /* GenericSample.swift in Sources */,
 				AAF5EB511BDB7467002E4905 /* PropertyObserveSample.swift in Sources */,
+				AAF5EB681BDBC745002E4905 /* UIColor+Hex.swift in Sources */,
 				AAF5EB441BDB5898002E4905 /* OptionalViewController.swift in Sources */,
 				AAF5EB551BDB7E37002E4905 /* DefaultArgumentsSample.swift in Sources */,
 				AAF5EB5B1BDB8180002E4905 /* TipsViewController.swift in Sources */,
 				AAF5EB2C1BDB2E05002E4905 /* Car.swift in Sources */,
 				AAF5EB291BDB2BD5002E4905 /* Sample01.swift in Sources */,
 				AAF5EB3D1BDB3E12002E4905 /* Sample01+Car.swift in Sources */,
+				AAF5EB6A1BDBC7A7002E4905 /* UIColor+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +594,7 @@
 				AAF5EB211BDB269B002E4905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAF5EB221BDB269B002E4905 /* Build configuration list for PBXNativeTarget "StudySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +603,7 @@
 				AAF5EB241BDB269B002E4905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAF5EB251BDB269B002E4905 /* Build configuration list for PBXNativeTarget "StudySwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +612,7 @@
 				AAF5EB271BDB269B002E4905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
