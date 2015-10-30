@@ -33,7 +33,7 @@ class Sample02: NSObject, CarBuildable {
     func ex01() {
         // 2-2
         let sample01 = Sample01()
-        sample01.printCarInfo(self.buildCar())
+        sample01.printCarInfo(self)
     }
     
     func ex03() {

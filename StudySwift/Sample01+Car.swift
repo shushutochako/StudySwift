@@ -8,7 +8,8 @@
 
 // 2-2
 extension Sample01 {
-    func printCarInfo(car: Car) {
+    func printCarInfo(builder: CarBuildable) {
+        let car = builder.buildCar()
         print(car.name)
         print(car.speed)
     }

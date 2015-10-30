@@ -73,19 +73,30 @@
                                     <action selector="tapTips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiO-yp-ydN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWn-Vr-1vS">
+                                <rect key="frame" x="50" y="475" width="500" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.77256337409999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sample"/>
+                                <connections>
+                                    <segue destination="g3R-Ia-PS7" kind="show" id="h7F-yY-ciA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="39N-28-GXJ" secondAttribute="trailing" constant="50" id="7cm-xD-mSF"/>
                             <constraint firstItem="eSi-rw-csB" firstAttribute="top" secondItem="6PG-jv-xMp" secondAttribute="bottom" constant="56" id="8DW-76-2hb"/>
+                            <constraint firstItem="rWn-Vr-1vS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="9fM-BR-M1u"/>
                             <constraint firstItem="6PG-jv-xMp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="BjL-jz-gjZ"/>
                             <constraint firstItem="6PG-jv-xMp" firstAttribute="top" secondItem="eZQ-J6-h2D" secondAttribute="bottom" constant="50" id="Dyp-X2-KpW"/>
+                            <constraint firstItem="rWn-Vr-1vS" firstAttribute="top" secondItem="Omp-wK-kE1" secondAttribute="bottom" constant="5" id="FYI-xc-12f"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="39N-28-GXJ" secondAttribute="bottom" constant="30" id="Hwl-uS-ZKH"/>
                             <constraint firstItem="eZQ-J6-h2D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Jmb-zz-QlW"/>
                             <constraint firstAttribute="trailing" secondItem="eSi-rw-csB" secondAttribute="trailing" constant="50" id="QEF-4w-7cd"/>
                             <constraint firstItem="eZQ-J6-h2D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="UDK-9m-7Ck"/>
                             <constraint firstItem="eSi-rw-csB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="YGt-lV-rmf"/>
                             <constraint firstAttribute="trailing" secondItem="eZQ-J6-h2D" secondAttribute="trailing" constant="50" id="aed-fK-tUk"/>
+                            <constraint firstAttribute="trailing" secondItem="rWn-Vr-1vS" secondAttribute="trailing" constant="50" id="f86-Gv-F2W"/>
                             <constraint firstItem="39N-28-GXJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="fxB-Zc-GGN"/>
                             <constraint firstAttribute="trailing" secondItem="6PG-jv-xMp" secondAttribute="trailing" constant="50" id="gpq-rc-Uy9"/>
                             <constraint firstItem="Omp-wK-kE1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="hbT-m3-1UT"/>
@@ -167,6 +178,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sot-MY-X1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1134" y="817"/>
+        </scene>
+        <!--Sample View Controller-->
+        <scene sceneID="Gc4-0X-4gq">
+            <objects>
+                <viewController id="g3R-Ia-PS7" customClass="SampleViewController" customModule="StudySwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Me0-Hv-S8h"/>
+                        <viewControllerLayoutGuide type="bottom" id="XI6-3H-thZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tae-oM-KYs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUr-14-ocw">
+                                <rect key="frame" x="50" y="84" width="500" height="30"/>
+                                <state key="normal" title="Map、Filter"/>
+                                <connections>
+                                    <action selector="tapMapFilter:" destination="g3R-Ia-PS7" eventType="touchUpInside" id="3Rw-ND-Yps"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-7c-5xQ">
+                                <rect key="frame" x="50" y="124" width="500" height="30"/>
+                                <state key="normal" title="ex1,2,3"/>
+                                <connections>
+                                    <action selector="tapEx2:" destination="g3R-Ia-PS7" eventType="touchUpInside" id="cu6-Ql-CaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cUr-14-ocw" firstAttribute="top" secondItem="Me0-Hv-S8h" secondAttribute="bottom" constant="20" id="Dn4-HD-d3W"/>
+                            <constraint firstItem="NBd-7c-5xQ" firstAttribute="leading" secondItem="Tae-oM-KYs" secondAttribute="leading" constant="50" id="HsA-ha-iSP"/>
+                            <constraint firstAttribute="trailing" secondItem="cUr-14-ocw" secondAttribute="trailing" constant="50" id="KlR-Er-LY5"/>
+                            <constraint firstItem="cUr-14-ocw" firstAttribute="leading" secondItem="Tae-oM-KYs" secondAttribute="leading" constant="50" id="SwP-MZ-2Tg"/>
+                            <constraint firstItem="NBd-7c-5xQ" firstAttribute="top" secondItem="cUr-14-ocw" secondAttribute="bottom" constant="10" id="q4f-T1-qoj"/>
+                            <constraint firstAttribute="trailing" secondItem="NBd-7c-5xQ" secondAttribute="trailing" constant="50" id="tco-yN-ndD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGK-DE-xjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="-674"/>
         </scene>
         <!--Optional View Controller-->
         <scene sceneID="x49-5N-djK">

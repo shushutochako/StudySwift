@@ -18,7 +18,9 @@ class OthersViewController: UIViewController {
     
     @IBAction func tapPropertyObserve(sender: AnyObject) {
         // プロパティの値を変更
-        self.propertyObserveLogic.height = Float(self.heightTextField.text!)!
+        if let text = self.heightTextField.text where !text.isEmpty {
+            self.propertyObserveLogic.height = Float(text)!
+        }
         self.heightTextField.endEditing(true)
     }
     

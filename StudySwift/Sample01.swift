@@ -15,14 +15,14 @@ class Sample01: NSObject {
         num = 2
         var str = "テキスト"
         str = "text"
-        print(num)
-        print(str)
+        print("num:\(num)")
+        print("str:\(str)")
         
         // 1-2
         let num2: Int = 0
         let str2 = "テキスト"
-        print(num2)
-        print(str2)
+        print("num2:\(num2)")
+        print("str2:\(str2)")
     }
     
     func ex2() {

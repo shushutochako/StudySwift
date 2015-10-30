@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AAC843101BDE672B003A0C9D /* Hamster.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC8430F1BDE672B003A0C9D /* Hamster.swift */; };
+		AAC843121BE3A814003A0C9D /* Sample03.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC843111BE3A814003A0C9D /* Sample03.swift */; };
+		AAC843141BE3A8D7003A0C9D /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC843131BE3A8D7003A0C9D /* SampleViewController.swift */; };
 		AAF5EAFB1BDB269B002E4905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EAFA1BDB269B002E4905 /* AppDelegate.swift */; };
 		AAF5EAFD1BDB269B002E4905 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5EAFC1BDB269B002E4905 /* ViewController.swift */; };
 		AAF5EB001BDB269B002E4905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF5EAFE1BDB269B002E4905 /* Main.storyboard */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		AAC8430F1BDE672B003A0C9D /* Hamster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hamster.swift; sourceTree = "<group>"; };
+		AAC843111BE3A814003A0C9D /* Sample03.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample03.swift; sourceTree = "<group>"; };
+		AAC843131BE3A8D7003A0C9D /* SampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
 		AAF5EAF71BDB269B002E4905 /* StudySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF5EAFA1BDB269B002E4905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAF5EAFC1BDB269B002E4905 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				AAF5EAFE1BDB269B002E4905 /* Main.storyboard */,
 				AAF5EB281BDB2BD5002E4905 /* Sample01.swift */,
 				AAF5EB2D1BDB2F4B002E4905 /* Sample02.swift */,
+				AAC843111BE3A814003A0C9D /* Sample03.swift */,
 				AAF5EB011BDB269B002E4905 /* Assets.xcassets */,
 				AAF5EB031BDB269B002E4905 /* LaunchScreen.storyboard */,
 				AAF5EB061BDB269B002E4905 /* Info.plist */,
@@ -220,6 +225,7 @@
 				AAF5EB5C1BDB8197002E4905 /* TipsViewController.storyboard */,
 				AAF5EB6B1BDBCB65002E4905 /* ProfileViewController.swift */,
 				AAF5EB6D1BDBCB79002E4905 /* ProfileViewController.storyboard */,
+				AAC843131BE3A8D7003A0C9D /* SampleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -374,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC843141BE3A8D7003A0C9D /* SampleViewController.swift in Sources */,
 				AAC843101BDE672B003A0C9D /* Hamster.swift in Sources */,
 				AAF5EB471BDB5DD1002E4905 /* GenericViewController.swift in Sources */,
 				AAF5EB531BDB771B002E4905 /* OthersViewController.swift in Sources */,
@@ -382,6 +389,7 @@
 				AAF5EB711BDBCC8F002E4905 /* ProfileModel.swift in Sources */,
 				AAF5EB2E1BDB2F4B002E4905 /* Sample02.swift in Sources */,
 				AAF5EAFD1BDB269B002E4905 /* ViewController.swift in Sources */,
+				AAC843121BE3A814003A0C9D /* Sample03.swift in Sources */,
 				AAF5EB6C1BDBCB65002E4905 /* ProfileViewController.swift in Sources */,
 				AAF5EAFB1BDB269B002E4905 /* AppDelegate.swift in Sources */,
 				AAF5EB421BDB5801002E4905 /* GenericSample.swift in Sources */,
